@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfSyncLogEntry xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <SyncLogEntry>
+    <Timestamp>2025-05-02T22:40:43.1105456+07:00</Timestamp>
+    <FileName>Text Document.txt</FileName>
+    <ChangeType>Created</ChangeType>
+    <SourcePath>C:\Folder1</SourcePath>
+    <TargetPath>C:\Folder2</TargetPath>
+    <FileSize>103</FileSize>
+    <LastModified>2025-04-03T11:33:00.1055114+07:00</LastModified>
+  </SyncLogEntry>
+  <SyncLogEntry>
+    <Timestamp>2025-05-02T22:40:43.2389713+07:00</Timestamp>
+    <FileName>жжж.txt</FileName>
+    <ChangeType>Created</ChangeType>
+    <SourcePath>C:\Folder1</SourcePath>
+    <TargetPath>C:\Folder2</TargetPath>
+    <FileSize>59</FileSize>
+    <LastModified>2025-04-24T16:18:33.71675+07:00</LastModified>
+  </SyncLogEntry>
+</ArrayOfSyncLogEntry>
