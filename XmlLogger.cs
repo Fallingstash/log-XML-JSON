@@ -25,6 +25,7 @@ namespace FolderSyncApp {
       if (!File.Exists(_logPath)) return new List<SyncLogEntry>();
 
       var serializer = new XmlSerializer(typeof(List<SyncLogEntry>));
+      
       using (var reader = new StreamReader(_logPath)) {
         return (List<SyncLogEntry>)serializer.Deserialize(reader);
       }
@@ -32,6 +33,7 @@ namespace FolderSyncApp {
 
     private void SaveLogs() {
       var serializer = new XmlSerializer(typeof(List<SyncLogEntry>));
+      
       using (var writer = new StreamWriter(_logPath)) {
         serializer.Serialize(writer, _logEntries);
       }

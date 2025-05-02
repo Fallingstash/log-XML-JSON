@@ -13,6 +13,7 @@ namespace FolderSyncApp {
     public MainForm() {
       InitializeComponent();
     }
+
     public string SourceFolder => textSource.Text;
     public string TargetFolder => textTarget.Text;
     public bool IsSourcePriority => chkSourcePriority.Checked;
@@ -24,6 +25,7 @@ namespace FolderSyncApp {
 
     private void btnBrowseSource_Click(object sender, EventArgs e) {
       FolderBrowserDialog folderDialog = new FolderBrowserDialog();
+
       if (folderDialog.ShowDialog() == DialogResult.OK) {
         textSource.Text = folderDialog.SelectedPath;
       }
@@ -31,6 +33,7 @@ namespace FolderSyncApp {
 
     private void btnBrowseTarget_Click(object sender, EventArgs e) { 
       FolderBrowserDialog folderDialog = new FolderBrowserDialog();
+
       if (folderDialog.ShowDialog() == DialogResult.OK) {
         textTarget.Text = folderDialog.SelectedPath;
       }
